@@ -63,7 +63,7 @@
     let currentIndex = 0;
 
     async function loadRecipes() {
-      const res = await fetch('recipes.json');
+      const res = await fetch('data/kerala_recipes.json');
       const data = await res.json();
       recipes = data.recipes;
       filteredRecipes = recipes;
